@@ -1,0 +1,37 @@
+{
+  "name": "MovieListAssignment2",
+  "version": "1.0.0",
+  "description": "Assignment 2 (25%) - Movie Listings",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon --ignore hackerNews/* --exec babel-node index.js",
+    "test": "cross-env NODE_ENV=test mocha --require babel-core/register --require babel-polyfill --reporter mochawesome --exit",
+    "pretest": "eslint *.js ./api/*.js ./test/*.js"
+  },
+  "author": "PaulP1010",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.18.2",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2",
+    "mockgoose": "^7.3.5",
+    "nodemon": "^1.17.1",
+    "should": "^13.2.1",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.1",
+    "lodash": "^4.17.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
