@@ -19,7 +19,7 @@ import {Mockgoose} from 'mockgoose';
 dotenv.config();
 
 // Connect to database
-if (nodeEnv == 'test') {
+if (process.env.NODE_ENV == 'test') {
   // use mockgoose for testing
   const mockgoose=new Mockgoose(mongoose);
   mockgoose.prepareStorage().then(()=>{

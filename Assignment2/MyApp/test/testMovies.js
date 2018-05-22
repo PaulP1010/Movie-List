@@ -46,7 +46,7 @@ describe('Movies unit test', function() {
     // post to /api/movies
     supertest(app)
     .post('/api/movies')
-    .send({name: 'Contact 99', address: '123 Strand St'})
+    .send({name: 'The Dark Knight Rises', year: '2012'})
     .expect('Content-type', /json/)
     .expect(201)
     .end(function(err, res) {
